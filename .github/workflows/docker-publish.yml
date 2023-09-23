@@ -43,7 +43,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: seedgou/zerotier-moon,ghcr.io/rwv/zerotier-moon
+          images: ddandrew/zerotier-moon,ghcr.io/d-dandrew/zerotier-moon
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
@@ -54,5 +54,5 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/386,linux/ppc64le,linux/s390x,linux/arm64,linux/arm/v6,linux/arm/v7,linux/riscv64
+          platforms: linux/amd64,linux/386,linux/ppc64le,linux/s390x,linux/mips64le,linux/arm64,linux/arm/v6,linux/arm/v7
           builder: ${{ steps.buildx.outputs.name }}
