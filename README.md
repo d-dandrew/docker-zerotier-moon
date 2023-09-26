@@ -117,11 +117,11 @@ docker run --cap-add=NET_ADMIN --cap-add=SYS_ADMIN --device=/dev/net/tun --name 
 ```
 
 Solution provided by [Jonnyan404's Fork](https://github.com/Jonnyan404/docker-zerotier-moon).
-See Also [Issue #1](https://github.com/rwv/docker-zerotier-moon/issues/1).
+See Also [rwv's Issue #1](https://github.com/rwv/docker-zerotier-moon/issues/1).
 
 ### Multi-arch support
 
-This image supports `linux/386`, `linux/amd64`, `linux/ppc64le`, `linux/arm64`, `linux/arm/v7`, `linux/arm/v6` and `linux/s390x`.
+This image supports `linux/386`, `linux/amd64`, `linux/ppc64le`, `linux/arm64`, `linux/arm/v7`, `linux/arm/v6`, `linux/s390x` and `linux/mips64le`.
 
 ### GitHub Container Registry
 
